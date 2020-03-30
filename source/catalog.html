@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="http://lorempixel.com/96/15/" alt="Погнали лого" width="96" height="15" class="page-header__logo-image">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__segment site-list">
+              <li class="site-list__item">
+                <a href="#">О сервисе</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Направления</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Попутчики</a>
+              </li>
+            </ul>
+            <div class="main-nav__segment">
+              <ul class="user-list">
+                <li class="user-list__item">
+                  <a class="user-list__login" href="#">Авторизация</a>
+                </li>
+              </ul>
+              <ul class="contacts-list">
+                <li class="contacts-list__item">
+                  <a class="contacts-list__phone" href="tel:+78005558628">8 800 555-86-28</a>
+                </li>
+                <li class="contacts-list__item">
+                  <a class="contacts-list__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="main-nav__segment social-list">
+              <li class="social-list__item">
+                <a class="social-list__fb" href="#">FB</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__vk" href="#">VK</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__ig" href="#">IG</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="page-title catalog-title">
+        <h1>Попутчики</h1>
+      </div>
+      <section class="results">
+        <div class="results__wrapper">
+          <h2 class="visually-hidden">Результаты поиска</h2>
+          <ul class="results__list">
+            <li class="results__item">
+              <article class="user-card">
+                <header class="user-card__header">
+                  <img src="http://lorempixel.com/70/70" alt="Таня Фирсова" class="user-card__photo" width="70" height="70">
+                  <div class="user-card__titles">
+                    <h3 class="user-card__name">Таня Фирсова</h3>
+                    <div class="user-card__likes">
+                      <button class="user-card__likes-btn user-card__likes-btn--active" type="button">
+                        <span>Мне нравится</span>
+                      </button>
+                      <span class="user-card__likes-count">1,5 М</span>
+                    </div>
+                    <ul class="user-card__tags-list">
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#ЗОЖ</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#ПП</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#Фитнес</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#пляж</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#авокадо</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#смузи</a>
+                      </li>
+                    </ul>
+                  </div>
+                </header>
+                <div class="user-card__main">
+                  <section class="user-card__wishlist wishlist">
+                    <h4 class="wishlist__title">хочет посетить:</h4>
+                    <ul class="wishlist__flags-list">
+                      <li class="wishlist__flags-item">
+                        <span>Шри Ланка</span>
+                      </li>
+                      <li class="wishlist__flags-item">
+                        <span>Таиланд</span>
+                      </li>
+                      <li class="wishlist__flags-item">
+                        <span>Сейшелы</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="user-card__transport transport">
+                    <h4 class="transport__title">транспорт:</h4>
+                    <ul class="transport__transport-list">
+                      <li class="transport__transport-item transport-item transport-item--active">
+                        <span class="transport-item__name">Авиаперелёт</span>
+                      </li>
+                      <li class="transport__transport-item transport-item">
+                        <span class="transport-item__name">Автобус</span>
+                      </li>
+                      <li class="transport__transport-item transport-item">
+                        <span class="transport-item__name">Велосипед</span>
+                      </li>
+                      <li class="transport__transport-item transport-item">
+                        <span class="transport-item__name">Пешком</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="user-card__rating rating">
+                    <h4 class="rating__title">левел:</h4>
+                    <p class="rating__count">99</p>
+                  </section>
+                </div>
+                <footer class="user-card__footer">
+                  <a href="#" class="user-card__btn btn">
+                    Позвать!
+                  </a>
+                </footer>
+              </article>
+            </li>
+            <li class="results__item">
+              <article class="user-card">
+                <header class="user-card__header">
+                  <img src="http://lorempixel.com/70/70" alt="Петя Демин" class="user-card__photo" width="70" height="70">
+                  <div class="user-card__titles">
+                    <h3 class="user-card__name">Петя Демин</h3>
+                    <div class="user-card__likes">
+                      <button class="user-card__likes-btn user-card__likes-btn--active" type="button">
+                        <span>Мне нравится</span>
+                      </button>
+                      <span class="user-card__likes-count">1500</span>
+                    </div>
+                    <ul class="user-card__tags-list">
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#бургер</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#бар</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#футбол</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#концерт</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#крафт</a>
+                      </li>
+                    </ul>
+                  </div>
+                </header>
+                <div class="user-card__main">
+                  <section class="user-card__wishlist wishlist">
+                    <h4 class="wishlist__title">хочет посетить:</h4>
+                    <ul class="wishlist__flags-list">
+                      <li class="wishlist__flags-item">
+                        <span>Бельгия</span>
+                      </li>
+                      <li class="wishlist__flags-item">
+                        <span>Чехия</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="user-card__transport transport">
+                    <h4 class="transport__title">транспорт:</h4>
+                    <ul class="transport__transport-list">
+                      <li class="transport__transport-item transport-item transport-item--active">
+                        <span class="transport-item__name">Авиаперелёт</span>
+                      </li>
+                      <li class="transport__transport-item transport-item transport-item--active">
+                        <span class="transport-item__name">Автобус</span>
+                      </li>
+                      <li class="transport__transport-item transport-item">
+                        <span class="transport-item__name">Велосипед</span>
+                      </li>
+                      <li class="transport__transport-item transport-item transport-item--active">
+                        <span class="transport-item__name">Пешком</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="user-card__rating rating">
+                    <h4 class="rating__title">левел:</h4>
+                    <p class="rating__count">80</p>
+                  </section>
+                </div>
+                <footer class="user-card__footer">
+                  <a href="#" class="user-card__btn btn">
+                    Позвать!
+                  </a>
+                </footer>
+              </article>
+            </li>
+            <li class="results__item">
+              <article class="user-card">
+                <header class="user-card__header">
+                  <img src="http://lorempixel.com/70/70" alt="Марк Смолов" class="user-card__photo" width="70" height="70">
+                  <div class="user-card__titles">
+                    <h3 class="user-card__name">Марк Смолов</h3>
+                    <div class="user-card__likes">
+                      <button class="user-card__likes-btn user-card__likes-btn--active" type="button">
+                        <span>Мне нравится</span>
+                      </button>
+                      <span class="user-card__likes-count">170</span>
+                    </div>
+                    <ul class="user-card__tags-list">
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#рэп</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#тату</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#хайпбист</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#кроссовки</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#суприм</a>
+                      </li>
+                    </ul>
+                  </div>
+                </header>
+                <div class="user-card__main">
+                  <section class="user-card__wishlist wishlist">
+                    <h4 class="wishlist__title">хочет посетить:</h4>
+                    <ul class="wishlist__flags-list">
+                      <li class="wishlist__flags-item">
+                        <span>США</span>
+                      </li>
+                      <li class="wishlist__flags-item">
+                        <span>Австралия</span>
+                      </li>
+                      <li class="wishlist__flags-item">
+                        <span>Доминика</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="user-card__transport transport">
+                    <h4 class="transport__title">транспорт:</h4>
+                    <ul class="transport__transport-list">
+                      <li class="transport__transport-item transport-item transport-item--active">
+                        <span class="transport-item__name">Авиаперелёт</span>
+                      </li>
+                      <li class="transport__transport-item transport-item">
+                        <span class="transport-item__name">Автобус</span>
+                      </li>
+                      <li class="transport__transport-item transport-item transport-item--active">
+                        <span class="transport-item__name">Велосипед</span>
+                      </li>
+                      <li class="transport__transport-item transport-item">
+                        <span class="transport-item__name">Пешком</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="user-card__rating rating">
+                    <h4 class="rating__title">левел:</h4>
+                    <p class="rating__count">25</p>
+                  </section>
+                </div>
+                <footer class="user-card__footer">
+                  <a href="#" class="user-card__btn btn">
+                    Позвать!
+                  </a>
+                </footer>
+              </article>
+            </li>
+            <li class="results__item">
+              <article class="user-card">
+                <header class="user-card__header">
+                  <img src="http://lorempixel.com/70/70" alt="Лариса Роговая" class="user-card__photo" width="70" height="70">
+                  <div class="user-card__titles">
+                    <h3 class="user-card__name">Лариса Роговая</h3>
+                    <div class="user-card__likes">
+                      <button class="user-card__likes-btn user-card__likes-btn--active" type="button">
+                        <span>Мне нравится</span>
+                      </button>
+                      <span class="user-card__likes-count">50</span>
+                    </div>
+                    <ul class="user-card__tags-list">
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#образование</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#карьера</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#учеба</a>
+                      </li>
+                      <li class="user-card__tags-item">
+                        <a href="#" class="user-card__tags-link">#линкедин</a>
+                      </li>
+                    </ul>
+                  </div>
+                </header>
+                <div class="user-card__main">
+                  <section class="user-card__wishlist wishlist">
+                    <h4 class="wishlist__title">хочет посетить:</h4>
+                    <ul class="wishlist__flags-list">
+                      <li class="wishlist__flags-item">
+                        <span>Великобритания</span>
+                      </li>
+                      <li class="wishlist__flags-item">
+                        <span>Германия</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="user-card__transport transport">
+                    <h4 class="transport__title">транспорт:</h4>
+                    <ul class="transport__transport-list">
+                      <li class="transport__transport-item transport-item transport-item--active">
+                        <span class="transport-item__name">Авиаперелёт</span>
+                      </li>
+                      <li class="transport__transport-item transport-item transport-item--active">
+                        <span class="transport-item__name">Автобус</span>
+                      </li>
+                      <li class="transport__transport-item transport-item">
+                        <span class="transport-item__name">Велосипед</span>
+                      </li>
+                      <li class="transport__transport-item transport-item">
+                        <span class="transport-item__name">Пешком</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="user-card__rating rating">
+                    <h4 class="rating__title">левел:</h4>
+                    <p class="rating__count">50</p>
+                  </section>
+                </div>
+                <footer class="user-card__footer">
+                  <a href="#" class="user-card__btn btn">
+                    Позвать!
+                  </a>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn--unstyled results__show-more">Показать еще</a>
+        <div class="results__arrows arrows">
+          <a href="#" class="arrows__left">
+            <span>Назад</span>
+          </a>
+          <a href="#" class="arrows__right">
+            <span>Вперёд</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="http://lorempixel.com/96/15/" alt="Погнали лого" width="96" height="15" class="page-footer__logo-image">
+        </a>
+      </div>
+      <ul class="page-footer__social-list social-list social-list--highlighted">
+        <li class="social-list__item">
+          <a class="social-list__fb" href="#">FB</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__vk" href="#">VK</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__ig" href="#">IG</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a href="#" class="copyright__link">
+          <span>HTML Academy</span>
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>

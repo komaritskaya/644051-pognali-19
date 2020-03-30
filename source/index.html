@@ -5,8 +5,296 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="http://lorempixel.com/96/15/" alt="Погнали лого" width="96" height="15" class="page-header__logo-image">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__segment site-list">
+              <li class="site-list__item">
+                <a href="#">О сервисе</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Направления</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Попутчики</a>
+              </li>
+            </ul>
+            <div class="main-nav__segment">
+              <ul class="user-list">
+                <li class="user-list__item">
+                  <a class="user-list__login" href="#">Авторизация</a>
+                </li>
+              </ul>
+              <ul class="contacts-list">
+                <li class="contacts-list__item">
+                  <a class="contacts-list__phone" href="tel:+78005558628">8 800 555-86-28</a>
+                </li>
+                <li class="contacts-list__item">
+                  <a class="contacts-list__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="main-nav__segment social-list">
+              <li class="social-list__item">
+                <a class="social-list__fb" href="#">FB</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__vk" href="#">VK</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__ig" href="#">IG</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">Сервис поиска попутчиков "Погнали"</h1>
+
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="visually-hidden">Как пользоваться сервисом</h2>
+          <p class="promo__slogan">В путешествие с крутыми попутчиками!</p>
+          <div class="promo__content">
+            <blockquote class="promo__review">
+              <p>«Лучшее приложение, что я видел в жизни!»</p>
+              <cite>Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</cite>
+            </blockquote>
+            <ul class="promo__order">
+              <li class="promo__order-item">Выберите направление</li>
+              <li class="promo__order-item">Изучите идеи путешественников</li>
+              <li class="promo__order-item">Находите тех, кто похож на вас</li>
+              <li class="promo__order-item">Путешествуйте вместе!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__wrapper">
+          <h2 class="about__title">О сервисе</h2>
+          <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="about__text about__text--accented">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <a href="#" class="btn about__show-more">Подробнее</a>
+        </div>
+      </section>
+
+      <section class="directions">
+        <div class="directions__wrapper">
+          <div class="directions__info">
+            <h2 class="directions__title">Направления</h2>
+            <p class="directions__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          </div>
+          <div class="directions__examples">
+            <ul class="directions__examples-list">
+              <li class="directions__examples-item">
+                <article class="direction-card">
+                  <img src="http://lorempixel.com/270/110" alt="Таиланд" class="direction-card__image" width="270" height="110">
+                  <div class="direction-card__content">
+                    <h3 class="direction-card__title">Таиланд</h3>
+                    <p class="direction-card__description">Джунгли зовут!</p>
+                  </div>
+                  <p class="direction-card__counter">18321</p>
+                </article>
+              </li>
+              <li class="directions__examples-item">
+                <article class="direction-card">
+                  <img src="http://lorempixel.com/270/110" alt="Франция" class="direction-card__image" width="270" height="110">
+                  <div class="direction-card__content">
+                    <h3 class="direction-card__title">Франция</h3>
+                    <p class="direction-card__description">Трэ бьен, манифик!</p>
+                  </div>
+                  <p class="direction-card__counter">12518</p>
+                </article>
+              </li>
+              <li class="directions__examples-item">
+                <article class="direction-card">
+                  <img src="http://lorempixel.com/270/110" alt="Чехия" class="direction-card__image" width="270" height="110">
+                  <div class="direction-card__content">
+                    <h3 class="direction-card__title">Чехия</h3>
+                    <p class="direction-card__description">Закоулки старой Европы</p>
+                  </div>
+                  <p class="direction-card__counter">5326</p>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn directions__show-more">Показать все</a>
+        </div>
+      </section>
+
+      <section class="users">
+        <div class="users__wrapper">
+          <div class="users__info">
+            <h2 class="users__title">Попутчики</h2>
+            <p class="users__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.  Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="users__text users__text--accented">Теперь можно легко найти единомышленников!</p>
+            <a href="#" class="users__show-more btn">Показать всех</a>
+          </div>
+          <ul class="users__list">
+            <li class="users__item">
+              <article class="user-demo">
+                <div class="user-demo__rating">
+                  <p>99</p>
+                  <p>level</p>
+                </div>
+                <img src="http://lorempixel.com/270/270" alt="Таня Фирсова" class="user-demo__image" width="270" height="270">
+                <ul class="user-demo__flags-list">
+                  <li class="user-demo__flags-item">
+                    <span>Шри Ланка</span>
+                  </li>
+                  <li class="user-demo__flags-item">
+                    <span>Таиланд</span>
+                  </li>
+                  <li class="user-demo__flags-item">
+                    <span>Сейшелы</span>
+                  </li>
+                </ul>
+                <h3 class="user-demo__name">Таня Фирсова</h3>
+                <ul class="user-demo__tags-list">
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#ЗОЖ</a>
+                  </li>
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#ПП</a>
+                  </li>
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#Фитнес</a>
+                  </li>
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#пляж</a>
+                  </li>
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#авокадо</a>
+                  </li>
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#смузи</a>
+                  </li>
+                </ul>
+                <ul class="user-demo__transport-list">
+                  <li class="user-demo__transport-item transport-item transport-item--active">
+                    <span class="transport-item__name">Авиаперелёт</span>
+                  </li>
+                  <li class="user-demo__transport-item transport-item">
+                    <span class="transport-item__name">Автобус</span>
+                  </li>
+                  <li class="user-demo__transport-item transport-item">
+                    <span class="transport-item__name">Велосипед</span>
+                  </li>
+                  <li class="user-demo__transport-item transport-item">
+                    <span class="transport-item__name">Пешком</span>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="users__item">
+              <article class="user-demo">
+                <div class="user-demo__rating">
+                  <p>80</p>
+                  <p>level</p>
+                </div>
+                <img src="http://lorempixel.com/270/270" alt="Петя Демин" class="user-demo__image" width="270" height="270">
+                <ul class="user-demo__flags-list">
+                  <li class="user-demo__flags-item">
+                    <span>Бельгия</span>
+                  </li>
+                  <li class="user-demo__flags-item">
+                    <span>Чехия</span>
+                  </li>
+                </ul>
+                <h3 class="user-demo__name">Петя Демин</h3>
+                <ul class="user-demo__tags-list">
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#бургер</a>
+                  </li>
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#бар</a>
+                  </li>
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#футбол</a>
+                  </li>
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#концерт</a>
+                  </li>
+                  <li class="user-demo__tags-item">
+                    <a href="#" class="user-demo__tags-link">#крафт</a>
+                  </li>
+                </ul>
+                <ul class="user-demo__transport-list">
+                  <li class="user-demo__transport-item transport-item transport-item--active">
+                    <span class="transport-item__name">Авиаперелёт</span>
+                  </li>
+                  <li class="user-demo__transport-item transport-item transport-item--active">
+                    <span class="transport-item__name">Автобус</span>
+                  </li>
+                  <li class="user-demo__transport-item transport-item">
+                    <span class="transport-item__name">Велосипед</span>
+                  </li>
+                  <li class="user-demo__transport-item transport-item transport-item--active">
+                    <span class="transport-item__name">Пешком</span>
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="rates">
+        <div class="rates__wrapper">
+          <h2 class="visually-hidden">Тарифы</h2>
+          <p class="rates__title">Добавьте свой профиль</p>
+          <ul class="rates__list">
+            <li class="rates__item">
+              <p>Базовое размещение</p>
+              <p>Бесплатно</p>
+            </li>
+            <li class="rates__item">
+              <p>Вывод на первых позициях</p>
+              <p>99 руб./мес</p>
+            </li>
+            <li class="rates__item">
+              <p>Кастомный цвет карточки</p>
+              <p>59 руб./мес</p>
+            </li>
+          </ul>
+          <a href="#" class="rates__show-more btn btn--unstyled">Показать тарифы для бизнеса</a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="http://lorempixel.com/96/15/" alt="Погнали лого" width="96" height="15" class="page-footer__logo-image">
+        </a>
+      </div>
+      <ul class="page-footer__social-list social-list social-list--highlighted">
+        <li class="social-list__item">
+          <a class="social-list__fb" href="#">FB</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__vk" href="#">VK</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__ig" href="#">IG</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a href="#" class="copyright__link">
+          <span>HTML Academy</span>
+        </a>
+      </div>
+    </footer>
 
   </body>
 </html>
